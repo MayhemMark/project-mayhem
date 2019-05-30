@@ -1,0 +1,181 @@
+{
+  "steam-engine" : {
+    "name" : "steam-engine",
+    "localised_name" : [
+      "entity-name.steam-engine"
+    ],
+    "maximum_temperature" : 165,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.5,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 900000
+  },
+  "steam-engine-2" : {
+    "name" : "steam-engine-2",
+    "localised_name" : [
+      "entity-name.steam-engine-2"
+    ],
+    "maximum_temperature" : 315,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.5,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 1800000
+  },
+  "steam-engine-3" : {
+    "name" : "steam-engine-3",
+    "localised_name" : [
+      "entity-name.steam-engine-3"
+    ],
+    "maximum_temperature" : 465,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.5,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 2700000
+  },
+  "steam-engine-4" : {
+    "name" : "steam-engine-4",
+    "localised_name" : [
+      "entity-name.steam-engine-4"
+    ],
+    "maximum_temperature" : 615,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.5,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 3600000
+  },
+  "steam-engine-5" : {
+    "name" : "steam-engine-5",
+    "localised_name" : [
+      "entity-name.steam-engine-5"
+    ],
+    "maximum_temperature" : 765,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.5,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 4500000
+  },
+  "steam-turbine" : {
+    "name" : "steam-turbine",
+    "localised_name" : [
+      "entity-name.steam-turbine"
+    ],
+    "maximum_temperature" : 465,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 1,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 5400000
+  },
+  "steam-turbine-2" : {
+    "name" : "steam-turbine-2",
+    "localised_name" : [
+      "entity-name.steam-turbine-2"
+    ],
+    "maximum_temperature" : 615,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 1,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 7200000
+  },
+  "steam-turbine-3" : {
+    "name" : "steam-turbine-3",
+    "localised_name" : [
+      "entity-name.steam-turbine-3"
+    ],
+    "maximum_temperature" : 765,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 1,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 9000000
+  },
+  "fluid-generator" : {
+    "name" : "fluid-generator",
+    "localised_name" : [
+      "entity-name.fluid-generator"
+    ],
+    "maximum_temperature" : 275,
+    "effectivity" : 0.6,
+    "fluid_usage_per_tick" : 0.1,
+    "drain" : 0,
+    "emissions" : 6.6666666666667e-08,
+    "pollution" : 0
+  },
+  "fluid-generator-2" : {
+    "name" : "fluid-generator-2",
+    "localised_name" : [
+      "entity-name.fluid-generator-2"
+    ],
+    "maximum_temperature" : 275,
+    "effectivity" : 0.8,
+    "fluid_usage_per_tick" : 0.1,
+    "drain" : 0,
+    "emissions" : 3.6363636363636e-08,
+    "pollution" : 0
+  },
+  "fluid-generator-3" : {
+    "name" : "fluid-generator-3",
+    "localised_name" : [
+      "entity-name.fluid-generator-3"
+    ],
+    "maximum_temperature" : 275,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.1,
+    "drain" : 0,
+    "emissions" : 1.9047619047619e-08,
+    "pollution" : 0
+  },
+  "hydrazine-generator" : {
+    "name" : "hydrazine-generator",
+    "localised_name" : [
+      "entity-name.hydrazine-generator"
+    ],
+    "maximum_temperature" : 275,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 0.2,
+    "drain" : 0,
+    "emissions" : 4.0849673202614e-09,
+    "pollution" : 0,
+    "max_energy_output" : 3120000
+  },
+  "creative-mod_energy-source" : {
+    "name" : "creative-mod_energy-source",
+    "localised_name" : [
+      "entity-name.creative-mod_energy-source"
+    ],
+    "maximum_temperature" : 500,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 1000000000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 5.82e+15
+  },
+  "burner-turbine-generator" : {
+    "name" : "burner-turbine-generator",
+    "localised_name" : [
+      "entity-name.burner-turbine-generator"
+    ],
+    "maximum_temperature" : 165,
+    "effectivity" : 1,
+    "fluid_usage_per_tick" : 1,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0,
+    "max_energy_output" : 1800000
+  }
+}

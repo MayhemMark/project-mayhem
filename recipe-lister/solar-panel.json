@@ -1,0 +1,92 @@
+{
+  "solar-panel-small" : {
+    "name" : "solar-panel-small",
+    "localised_name" : [
+      "entity-name.solar-panel-small"
+    ],
+    "production" : 26670,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel" : {
+    "name" : "solar-panel",
+    "localised_name" : [
+      "entity-name.solar-panel"
+    ],
+    "production" : 60000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-large" : {
+    "name" : "solar-panel-large",
+    "localised_name" : [
+      "entity-name.solar-panel-large"
+    ],
+    "production" : 106670,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-small-2" : {
+    "name" : "solar-panel-small-2",
+    "localised_name" : [
+      "entity-name.solar-panel-small-2"
+    ],
+    "production" : 40000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-2" : {
+    "name" : "solar-panel-2",
+    "localised_name" : [
+      "entity-name.solar-panel-2"
+    ],
+    "production" : 90000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-large-2" : {
+    "name" : "solar-panel-large-2",
+    "localised_name" : [
+      "entity-name.solar-panel-large-2"
+    ],
+    "production" : 160000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-small-3" : {
+    "name" : "solar-panel-small-3",
+    "localised_name" : [
+      "entity-name.solar-panel-small-3"
+    ],
+    "production" : 60000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-3" : {
+    "name" : "solar-panel-3",
+    "localised_name" : [
+      "entity-name.solar-panel-3"
+    ],
+    "production" : 135000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  },
+  "solar-panel-large-3" : {
+    "name" : "solar-panel-large-3",
+    "localised_name" : [
+      "entity-name.solar-panel-large-3"
+    ],
+    "production" : 240000,
+    "drain" : 0,
+    "emissions" : 0,
+    "pollution" : 0
+  }
+}
