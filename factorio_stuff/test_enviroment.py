@@ -2,7 +2,7 @@ import json
 from functools import reduce
 
 def flatten2DList (arrayWithArrays):
-	return reduce(lambda x,y : x + y, arrayWithArrays)
+	return reduce(lambda x,y : x + y, arrayWithArrays, [])
 
 items = json.loads(open("./recipe-lister/item.json", "r").read())
 recipes = json.loads(open("./recipe-lister/recipe.json", "r").read())
@@ -62,18 +62,6 @@ def doTheActualThing (recipeName):
 	return discoveredTechs
 
 # TESTS:
-def test(input, expectedOutput) :
-	actualOutput = doTheActualThing(input)
-	actualOutput = set(map(lambda i: i['name'], actualOutput))
-
-	expectedOutputString = ', '.join(expectedOutput)
-	actualOutputString = ', '.join(actualOutput)
-	print()
-	if (actualOutputString != expectedOutputString):
-		print('  ✗\t' + input + '\n\t' + actualOutputString)
-		print()
-	else: 
-		print('  ✓\t' + input + '\n\t' + actualOutputString)
 
 # test('basic-transport-belt', [
 # 	'basic-logistics'
@@ -98,24 +86,36 @@ def test(input, expectedOutput) :
 def itemForSearchValue(value):
 	return items[choice]
 
+# returns TRUE if "item" can be made using "recipe"
 def recipeProducesItem (recipe, item):
-	if type(recipe['products']) ==  0:
-		print('Found a recipe without products')
-		print(recipe)
-        
 	productsInRecipeThatAreTheItem = filter(lambda product: product['name'] == item['name'], recipe['products'])
-	itemCanBeMadeWithRecipe = len(list(productsInRecipeThatAreTheItem)) > 0
-	# print(f'Comparing {recipe["name"]} with {item["name"]}: {itemCanBeMadeWithRecipe}')
-	# wtf?:
-	return itemCanBeMadeWithRecipe
+	return len(list(productsInRecipeThatAreTheItem)) > 0
 
 
 choice = input("type an item name:")
 item = itemForSearchValue(choice)
-itemRecipes = list(map(lambda rN: recipes[rN],recipes.keys()))
-print('  Recipes in total: ' + str(len(itemRecipes)))
-itemRecipes2 = list(filter(lambda r: recipeProducesItem(r, item), itemRecipes))
-print('  Recipes after filter: ' + str(len(itemRecipes2)))
+print(f'''
+You selected item:
+  Name: '{item['name']}'
+  Type: '{item['type']}'
+  Order: '{item['order']}'
+  Localized: {item['localised_name']}
+  Fuel value: {int(item['fuel_value'])}''')
 
-print('The result is:')
-print(list(itemRecipes2))
+if (item['fuel_value']) != 0:
+	print(f'''  Fuel category: {item["fuel_category"]}
+  Fuel acceleration: {item["fuel_acceleration_multiplier"]}
+  Fuel top speed: {item["fuel_top_speed_multiplier"]}
+''')
+
+itemRecipes = list(map(lambda rN: recipes[rN],recipes.keys()))
+itemRecipes2 = list(filter(lambda r: recipeProducesItem(r, item), itemRecipes))
+print(f'{str(len(itemRecipes2))} out of {str(len(itemRecipes))} recipes can be used to make {item["name"]}')
+
+print('Testing every recipe')
+for recipe in itemRecipes2:
+	recipeInfo = doTheActualThing(recipe['name'])
+	print(f'''
+  Recipe: {recipe['name']}
+  Tech tree: {', '.join(set(map(lambda i: i['name'], recipeInfo)))}
+''')
