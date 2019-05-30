@@ -18,7 +18,7 @@ response = requests.get('https://p0mp.com')
 
 
 common_letters = collections.Counter(str(response.content)).most_common()
-p0mp_letters = list(convert_common_letters_to_p0mp(common_letters, 'Mayhem'))
+p0mp_letters = list(convert_common_letters_to_p0mp(common_letters, 'weyland'))
 p0mp_letter_totals = list(get_total_letter_count(p0mp_letters))
 total_numbers = sum(p0mp_letter_totals)
 
