@@ -18,7 +18,5 @@ def roll_dice():
 		roll_dice()
 	else:
 		return
-
-		
 			
 roll_dice()
