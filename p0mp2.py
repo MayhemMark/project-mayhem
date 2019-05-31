@@ -2,17 +2,17 @@ import requests
 import collections
 
 
-
 def convert_common_letters_to_p0mp(c_letters, user_input):
-	def fun (str_letter):
-		return next(c_letter for c_letter in c_letters if (c_letter[0] == str_letter))
+    def fun(str_letter):
+        return next(c_letter for c_letter in c_letters if (c_letter[0] == str_letter))
 
-	return map(fun, list(user_input))
+    return map(fun, list(user_input))
 
 
 def get_total_letter_count(p_letters):
-	# doe je ding
-    return map(lambda c_letter : c_letter[1], p_letters)
+    # doe je ding
+    return map(lambda c_letter: c_letter[1], p_letters)
+
 
 response = requests.get('https://p0mp.com')
 
@@ -42,4 +42,3 @@ print(f"""
 	Response encoding:
 	{response.encoding}
 """)
-

@@ -1,5 +1,7 @@
 from calculation import get_weight_for_input
 import sys
+
+
 class WeightUnit:
     def __init__(self, label, unitPerKilo, abbreviations):
         self.label = label
@@ -9,10 +11,10 @@ class WeightUnit:
     def __repr__(self):
         return "<%s: %s>" % (self.__class__.__name__, self.label)
 
+
 list_options = (
     WeightUnit("Kilos", 1, ("kg", "kg.", "kilos", "kilo")),
-    WeightUnit("Gram", 1000, ("gr","gram","gr.","grm")),
-
+    WeightUnit("Gram", 1000, ("gr", "gram", "gr.", "grm")),
     WeightUnit("Pounds", (1/0.45), ("p", "pd", "pds", "lbs", "lb")),
     WeightUnit("Stone", 25, ("s", "st", "stone")),
 
@@ -41,5 +43,6 @@ input_quantity = input[0]
 
 print(f"{input_quantity} {input_type.label} is the same as:")
 for item in list_options:
-    input_quantity_calculated = (input_quantity/input_type.unitPerKilo) * item.unitPerKilo
+    input_quantity_calculated = (
+        input_quantity/input_type.unitPerKilo) * item.unitPerKilo
     print(f'  {input_quantity_calculated} {item.label}')
